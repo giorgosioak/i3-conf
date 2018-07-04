@@ -12,7 +12,9 @@ for_window [class=".*"] title_format " %title" # adds a space to left of title
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec termite # i3-sensible-terminal
+#bindsym $mod+Return exec i3-sensible-terminal
+bindsym $mod+Return exec termite
+
 
 # kill focused window
 bindsym $mod+Shift+q kill
