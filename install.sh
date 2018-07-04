@@ -43,7 +43,7 @@ if ! [ -x "$(command -v aurman)" ]; then
     exit 1
 fi
 
-aurman -S i3-gaps  i3-wm  i3blocks  i3lock  i3status compton feh dmenu gnome-screenshot
+aurman -S i3-gaps i3-wm i3blocks i3lock i3status compton feh dmenu gnome-screenshot lxappearance
 
 echo
 echo '---------------------------------------------'
