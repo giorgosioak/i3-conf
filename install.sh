@@ -51,5 +51,10 @@ echo ' 3 - Copying configurations                  '
 echo '---------------------------------------------'
 echo
 
+echo 'Copying configuration files'
 mkdir -p $HOME/.config/
 cp -r config/* $HOME/.config/
+
+echo 'Copying wallpapers'
+mkdir -p $HOME/Pictures/Wallpapers/
+cp -r wallpapers/* $HOME/Pictures/Wallpapers/

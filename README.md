@@ -1,2 +1,7 @@
-# i3-conf
-Personal i3 config
+# Personal i3 config
+
+To install run:
+```
+$ chmod +x install.sh
+$ ./install.sh
+```
