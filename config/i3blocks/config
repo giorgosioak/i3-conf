@@ -1,0 +1,105 @@
+# i3blocks config file
+#
+# Please see man i3blocks for a complete reference!
+# The man page is also hosted at http://vivien.github.io/i3blocks
+#
+# List of valid properties:
+#
+# align
+# color
+# command
+# full_text
+# instance
+# interval
+# label
+# min_width
+# name
+# separator
+# separator_block_width
+# short_text
+# signal
+# urgent
+
+# Global properties
+#
+# The top properties below are applied to every block, but can be overridden.
+# Each block command defaults to the script name to avoid boilerplate.
+full_text=
+command=/usr/lib/i3blocks/$BLOCK_NAME
+separator=false
+separator_block_width=16
+align=center
+markup=pango
+
+# Volume indicator
+#
+# The first parameter sets the step (and units to display)
+# The second parameter overrides the mixer selection
+# See the script for details.
+[separator]
+[volume]
+command=$HOME/.config/i3blocks/blocklets/audio
+full_text=test
+color=#81a2be
+label=sound
+interval=5
+
+# Memory usage
+[separator]
+[memory]
+command=$HOME/.config/i3blocks/blocklets/mem_usage
+full_text=
+color=#8abeb7
+label=
+interval=5
+
+# Cpu usage
+[separator]
+[cpu_usage]
+full_text=
+color=#b294bb
+label=
+interval=10
+
+# Keyboard Layout AUR package: xkb-switch-git
+[keymap]
+command=bash -c 'xkb-switch;xkb-switch -W'
+full_text=
+color=#de935f
+label=⌨
+interval=persist
+
+[separator]
+[ethernet]
+label=🜷
+instance=enp5s0
+command=$HOME/.config/i3blocks/ethernet
+color=#00FF00
+interval=2
+
+# Date Time
+[separator]
+[time]
+full_text=
+color=#c5c8c6
+label=
+command=date '+%d-%m-%Y'
+interval=300
+
+[separator]
+[time]
+full_text=
+color=#c5c8c6
+label=
+command=date '+%H:%M:%S'
+interval=1
+
+# Network interface monitoring
+#
+# If the instance is not specified, use the interface used for default route.
+# The address can be forced to IPv4 or IPv6 with -4 or -6 switches.
+# [iface]
+# instance=wlan0
+# color=#00FF00
+# interval=10
+# separator=false
