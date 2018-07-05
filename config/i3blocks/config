@@ -53,6 +53,15 @@ color=#8abeb7
 label=
 interval=5
 
+# Wifi signal strength
+[separator]
+[wifi]
+instance=wlp2s0
+color=#00FF00
+interval=10
+label=
+separator=false
+
 # Cpu usage
 [separator]
 [cpu_usage]
