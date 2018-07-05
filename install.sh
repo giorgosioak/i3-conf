@@ -45,7 +45,8 @@ fi
 
 aurman -S i3-gaps i3-wm i3blocks i3lock i3status compton feh \
 dmenu lxappearance gnome-screenshot gnome-terminal termite \
-nerd-fonts-source-code-pro noto-fonts xkb-switch-git
+nerd-fonts-source-code-pro noto-fonts ttf-font-awesome-4 \
+xkb-switch-git
 
 echo
 echo '---------------------------------------------'
